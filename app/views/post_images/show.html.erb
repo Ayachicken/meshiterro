@@ -20,7 +20,7 @@
           </li>
           <li>
             <i class="fa fa-heart"></i>
-            <a href="#">202 いいね</a>
+            <a href="#comments"><%= @post_image.post_comments.count %></a>
           </li>
           <li>
             <i class="fa fa-comment"></i>
@@ -34,7 +34,7 @@
 
           <div class="comment-list bt style-2" id="comments">
             <div class="float-wrapper">
-              <h2 class="comment-count">4件コメント</h2>
+              <h2 class="comment-count"><%= @post_image.post_comment.count %>件のコメント</h2>
             </div>
             <ol>
               <li class="comment">
